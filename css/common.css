@@ -1,0 +1,108 @@
+/* 변수 */
+:root{
+    /* 디바이스별 글씨 크기 기준 */
+    --fs-pc:16px;
+    --fs-pad:14px;
+    --fs-mo:12px;
+
+    /* 행간 */
+    --1h1:1.2;
+    --1h2:1.45;
+
+    /* 태그 글씨 크기 */
+    --fs-h4:1.25rem;
+    --fs-h3:1.5625rem;
+    --fs-h2:1.9531rem;
+    --fs-h1:2.4414rem;
+    --fs-body1:1rem;
+    --fs-body2:0.85rem;
+    --fs-detail:0.7225rem;
+
+    /* 태그 글씨 두께 */
+    --fw1:400;
+    --fw2:700;
+
+    /* 여백 */
+    --space-3x-large:6rem;
+    --space-2x-large:3rem;
+    --space-x-large:2rem;
+    --space-normal:1rem;
+    --space-x-small:0.5rem;
+    --space-2x-small:0.25rem;
+
+    /* 색상 */
+    --maroon0:#FFD4D4;
+    --maroon1:#FCABAB;
+    --maroon2:#F68383;
+    --maroon3:#ED6161;
+    --maroon4:#E04545;
+    --maroon5:#CE3030;
+    --maroon6:#B72020;
+    --maroon7:#9A1515;
+    --maroon8:#780E0E;
+    --maroon8:#540808;
+    --main-maroon:#810B38;
+
+    --beige0:#F5F0EB;
+    --beige1:#F2D8BD;
+    --beige2:#EEBF91;
+    --beige3:#E7A96B;
+    --beige4:#DC944C;
+    --beige5:#CE8235;
+    --beige6:#BC7024;
+    --beige7:#A55E18;
+    --beige8:#8A4D10;
+    --beige9:#6E3C0B;
+    --main-beige:#DCC3AA;
+
+    --gray0:#FFFFFF;
+    --gray1:#FBFBFB;
+    --gray2:#F3F3F3;
+    --gray3:#E7E7E7;
+    --gray4:#D6D6D6;
+    --gray5:#BEBEBE;
+    --gray6:#9E9E9E;
+    --gray7:#777777;
+    --gray8:#494949;
+    --gray9:#1A1A1A;
+    
+}
+h1{
+    font-size: var(--fs-h1);
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+}
+h4{
+    font-size: var(--fs-h4);
+}
+html{
+    font-size: var(--fs-pc);
+    font-weight: var(--fw1);
+    font-family: 'Pretendard', sans-serif;
+    color: var(--gray9);
+}
+.common-frame{
+    padding: 0 var(--space-2x-large);
+}
+
+@media (max-width:1024px){
+    html{
+        font-size: var(--fs-pad);
+    }
+    .common-frame{
+        padding: 0 var(--space-x-large);
+    }
+
+}
+@media (max-width:768px) {
+    html{
+        font-size: var(--fs-mo);
+    }
+    .common-frame{
+        padding: 0 var(--space-normal);
+    }
+}
