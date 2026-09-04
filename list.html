@@ -8,13 +8,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/list.css">
     <script src="./js/header.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- 제품정보 -->
-    <script src="./js/products.js"></script>
-    <script src="./js/product-control.js" defer></script>
     <title>MARUN - 취업용 포트폴리오</title>
 </head>
 
@@ -667,340 +662,29 @@
             </div>
         </div>
     </div>
-    <!-- 히어로 배너 슬라이드 -->
+
     <main>
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/slide1-pc.jpg"
-                        alt="머무는 시간이 좋아지는 공간, MARUN이 만듭니다. 자연의 소재와 절제된 디자인으로 일상에 가치를 더합니다.">
-                    <img class="pad" src="./img/slide1-pad.jpg"
-                        alt="머무는 시간이 좋아지는 공간, MARUN이 만듭니다. 자연의 소재와 절제된 디자인으로 일상에 가치를 더합니다.">
-                    <img class="mo" src="./img/slide1-mo.jpg"
-                        alt="머무는 시간이 좋아지는 공간, MARUN이 만듭니다. 자연의 소재와 절제된 디자인으로 일상에 가치를 더합니다.">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/slide2-pc.jpg"
-                        alt="좋은 디자인은 삶의 질을 높입니다. MARUN은 아름다움과 기능, 그리고 지속가능성을 균형 있게 생각합니다.">
-                    <img class="pad" src="./img/slide2-pad.jpg"
-                        alt="좋은 디자인은 삶의 질을 높입니다. MARUN은 아름다움과 기능, 그리고 지속가능성을 균형 있게 생각합니다.">
-                    <img class="mo" src="./img/slide2-mo.jpg"
-                        alt="좋은 디자인은 삶의 질을 높입니다. MARUN은 아름다움과 기능, 그리고 지속가능성을 균형 있게 생각합니다.">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/slide3-pc.jpg"
-                        alt="자연에서 영감을 받은 형태와 색감으로 공간에 편안한 균형을 더하는 MARUN의 새로운 컬렉션을 소개합니다.">
-                    <img class="pad" src="./img/slide3-pad.jpg"
-                        alt="자연에서 영감을 받은 형태와 색감으로 공간에 편안한 균형을 더하는 MARUN의 새로운 컬렉션을 소개합니다.">
-                    <img class="mo" src="./img/slide3-mo.jpg"
-                        alt="자연에서 영감을 받은 형태와 색감으로 공간에 편안한 균형을 더하는 MARUN의 새로운 컬렉션을 소개합니다.">
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <script>
-            const swiper = new Swiper('.swiper', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                speed: 500
-            });
-        </script>
-        <div class="banner-line">
-            <div class="common-frame">
-                <span>NOTICE</span>
-                <h4>MARUN의 새로운 소식을 확인해보세요.</h4>
-                <p>새로운 브랜드 관련 소식 만나보기</p>
-                <a href="#" class="btn-style">VIEW NOTICE<img src="./img/arrowright.svg" alt="공지사항 바로가기"></a>
-            </div>
+        <div class="hero-banner">
+            <a href="#">
+                <picture>
+                    <source media="(max-width:768px)" srcset="./img/banner-new-mo.jpg">
+                    <source media="(max-width:1024px)" srcset="./img/banner-new-pad.jpg">
+                    <img src="./img/banner-new-pc.jpg" alt="MARUN 쇼핑몰 신상품 배너">
+                </picture>
+            </a>
         </div>
 
         <section class="con1">
             <div class="common-frame">
                 <div class="title">
-                    <h1>Designed for Your Space, MARUN</h1>
+                    <h1>FRESHLY CURATED</h1>
                     <span></span>
-                    <p>당신의 공간에 어울리는 가구를 찾아보세요.</p>
+                    <p>일상에 새로운 균형을 더하는 이번 시즌의 셀렉션</p>
                 </div>
-                <div class="swiper cardlist-wrap">
-                    <ul class="cardlist swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">LIVING ROOM</div>
-                                <img src="./img/category-living.jpg" alt="Living Room">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">DINING ROOM</div>
-                                <img src="./img/category-dining.jpg" alt="Dining Room">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">KITCHEN</div>
-                                <img src="./img/category-kitchen.jpg" alt="Kitchen">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">BEDROOM</div>
-                                <img src="./img/category-bed.jpg" alt="Bedroom">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <script>
-                const cardlist = new Swiper('.cardlist-wrap', {
-                    breakpoints: {
-                        0: {
-                            slidesPerView: 1.2,
-                            spaceBetween: 12,
-                        },
-                        340: {
-                            slidesPerView: 2.2,
-                            spaceBetween: 12,
-                        },
-                        768: {
-                            slidesPerView: 3.2,
-                            spaceBetween: 14,
-                        },
-                        1024: {
-                            slidesPerView: 4,
-                            spaceBetween: 16,
-                        }
-                    },
-                    autoplay: {
-                        delay: 3000
-                    }
-                });
-            </script>
-        </section>
-
-        <section class="con2">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>Living with MARUN</h1>
-                </div>
-                <div class="swiper review-story-wrap">
-                    <ul class="swiper-wrapper review-story">
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/review-img1.jpg" alt="오래 머물고 싶은 거실이 되었어요">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>오래 머물고 싶은 거실이 되었어요</h4>
-                                <p>집에서 가장 많은 시간을 보내는 곳이 거실인 만큼, 보기 좋은 것보다 오래 사용해도 편안한 소파를 찾고 있었어요. 너무 크거나 묵직한 디자인은 공간을 답답하게 만들 것 같아 고민이 많았는데, MARUN의 소파는 낮고 안정적인 실루엣 덕분에 거실이 한결 여유롭게 느껴졌습니다. 따뜻한 패브릭의 질감도 원목 가구와 자연스럽게 어우러져 마음에 들어요. 주말이면 소파에 기대 책을 읽거나 커피를 마시며 시간을 보내는데, 가구 하나를 바꿨을 뿐인데 집에서 보내는 시간이 전보다 훨씬 편안해졌어요.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/heart-on.svg" alt="좋아요 하트">84</span>
-                                        <img src="./img/review-original-img1.jpg" alt="Mellow Fabric Sofa 03">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            Mellow Fabric Sofa 03
-                                        </div>
-                                        <div class="product-category">
-                                            Living · Sofa
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>2,890,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">15%</div>
-                                            <div class="pay"><b>2,456,500</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/review-img2.jpg" alt="함께하는 시간이 자연스럽게 길어지는 곳">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>함께하는 시간이 자연스럽게 길어지는 곳</h4>
-                                <p>예전에는 식탁을 단순히 식사하는 가구라고 생각했는데, 지금은 집에서 가장 자주 머무는 장소가 되었어요. 아침에는 간단히 커피를 마시고, 저녁에는 식사를 하거나 노트북을 펼쳐 일을 하기도 합니다. 무엇보다 원목 특유의 자연스러운 결이 공간을 따뜻하게 만들어주는 점이 좋았어요. 군더더기 없는 디자인이라 어떤 의자와도 잘 어울리고, 시간이 지나면서 생기는 작은 흔적들까지 이 테이블의 일부가 될 것 같아요. 친구들이 놀러 오면 자연스럽게 모두 식탁 주변에 모이게 되는 것도 마음에 듭니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/heart-on.svg" alt="좋아요 하트">67</span>
-                                        <img src="./img/review-original-img2.jpg" alt="Noma Oak Dining Table">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            Noma Oak Dining Table
-                                        </div>
-                                        <div class="product-category">
-                                            Dining · Table
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>1,780,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">20%</div>
-                                            <div class="pay"><b>1,424,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/review-img3.jpg" alt="하루의 끝이 조금 더 편안해졌어요">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>하루의 끝이 조금 더 편안해졌어요</h4>
-                                <p>침실만큼은 최대한 단순하고 차분한 공간으로 만들고 싶었어요. 화려한 디자인보다는 매일 봐도 질리지 않고 편안하게 느껴지는 침대를 찾았고, 지금의 침대를 선택하게 됐습니다. 낮은 프레임 덕분에 방이 실제보다 넓어 보이고, 부드러운 패브릭 헤드보드는 기대어 책을 읽을 때도 편안해요. 베이지와 우드 컬러로 침실을 정리하고 나니 늦은 저녁 방에 들어왔을 때 느껴지는 분위기도 많이 달라졌습니다. 하루를 마무리하는 공간이 단순히 잠을 자는 곳이 아니라 온전히 쉬어가는 장소가 된 것 같아요.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/heart-off.svg" alt="좋아요 하트">91</span>
-                                        <img src="./img/review-original-img3.jpg" alt="Calm Upholstered Bed">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            Calm Upholstered Bed
-                                        </div>
-                                        <div class="product-category">
-                                            Bedroom · Bed
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>2,240,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">10%</div>
-                                            <div class="pay"><b>2,016,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/review-img4.jpg" alt="일과 휴식 사이에 균형을 만들어준 책상">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>일과 휴식 사이에 균형을 만들어준 책상</h4>
-                                <p>집에서 작업하는 시간이 늘면서 오랫동안 사용할 수 있는 제대로 된 책상이 필요했어요. 기능적인 사무용 책상보다는 집 안의 다른 가구와 자연스럽게 어울리면서도 작업에 집중할 수 있는 디자인을 원했습니다. 상판이 넉넉해서 모니터와 노트북, 책을 함께 올려두어도 답답하지 않고, 원목의 따뜻한 색감 덕분에 작업 공간이 지나치게 사무적으로 보이지 않는 점이 특히 마음에 들어요. 일을 마친 뒤에는 책과 작은 조명만 남겨두는데, 그때는 또 하나의 조용한 독서 공간처럼 느껴집니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/heart-off.svg" alt="좋아요 하트">43</span>
-                                        <img src="./img/review-original-img4.jpg" alt="Form Walnut Desk">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">
-                                            Form Walnut Desk
-                                        </div>
-                                        <div class="product-category">
-                                            Workspace · Desk
-                                        </div>
-                                        <div class="pay-original">
-                                            <span>1,460,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">25%</div>
-                                            <div class="pay"><b>1,095,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    const reviewStory = new Swiper('.review-story-wrap', {
-                        breakpoints: {
-                            0: {
-                                slidesPerView: 1.2,
-                                spaceBetween: 12,
-                            },
-                            340: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 12,
-                            },
-                            768: {
-                                slidesPerView: 3.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 16,
-                            }
-                        },
-                    })
-                </script>
-            </div>
-        </section>
-
-        <section class="con3">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>SPECIAL OFFER</h1>
-                    <span></span>
-                    <p>MARUN이 제안하는 특별한 혜택을 만나보세요.</p>
-                </div>
-                <ul class="sale">
+                <ul class="new-product">
                     <li>
                         <a href="#">
-                            <figure>
-                                <img src="./img/mso1.jpg" alt="특가상품1">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1"></h4>
-                                <p class="desc-1"></p>
-                                <div class="pay-frame">
-                                    <div class="pay-original">
-                                        <span></span>원
-                                    </div>
-                                    <div class="pay-discount">
-                                        <div class="discount">%</div>
-                                        <div class="pay"><b></b>원</div>
-                                    </div>
-                                </div>
-                                <span class="like-badge noab"><img src="./img/heart-on.svg" alt="좋아요 하트">73</span>
-                            </div>
+                            
                         </a>
                     </li>
                 </ul>
