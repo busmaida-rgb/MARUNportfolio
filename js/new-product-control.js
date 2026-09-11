@@ -1,10 +1,10 @@
-const saleUlTag = document.querySelector('.sale');
+const newpUlTag = document.querySelector('.new-product');
 
 function formatMoney(value){
     return Number(value).toLocaleString('ko-KR');
 };
 
-let result = productArray.map(product=>{
+let result = newProductArray.map(product =>{
     return `<li>
                 <a href="#">
                     <figure>
@@ -22,9 +22,8 @@ let result = productArray.map(product=>{
                                 <div class="pay"><b>${formatMoney(product.price*(1 - product.pdiscount))}</b>원</div>
                             </div>
                         </div>
-                        <span class="like-badge noab"><img src="./img/heart-off.svg" alt="좋아요하트">${product.plikes}</span>
                     </div>
     </li>`
 }).join('');
 
-saleUlTag.innerHTML = result;
+newpUlTag.innerHTML = result;

@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/header.js" defer></script>
     <script src="./js/new-product.js"></script>
-    <script src="./js/new-product-control.js" defer></script>
     <title>MARUN - 취업용 포트폴리오</title>
 </head>
 
@@ -666,30 +668,110 @@
     </div>
 
     <main>
-        <div class="hero-banner">
-            <a href="#">
-                <picture>
-                    <source media="(max-width:768px)" srcset="./img/banner-new-mo.jpg">
-                    <source media="(max-width:1024px)" srcset="./img/banner-new-pad.jpg">
-                    <img src="./img/banner-new-pc.jpg" alt="MARUN 쇼핑몰 신상품 배너">
-                </picture>
-            </a>
-        </div>
-
-        <section class="con1">
+        <section class="info-product">
             <div class="common-frame">
-                <div class="title">
-                    <h1>FRESHLY CURATED</h1>
-                    <span></span>
-                    <p>일상에 새로운 균형을 더하는 이번 시즌의 셀렉션</p>
+                <div class="product-img">
+                    <figure class="thumbnail-big">
+                        <img src="./img/newp7.jpg" alt="세렌 오크 벤치">
+                    </figure>
+                    <div class="horizontal-scroll-gallery">
+                        <div class="train-horizontal">
+                            <figure><img src="./img/newp1.jpg" alt="세렌 오크 벤치 1번 사진"></figure>
+                            <figure><img src="./img/newp1.jpg" alt="세렌 오크 벤치 2번 사진"></figure>
+                            <figure><img src="./img/newp1.jpg" alt="세렌 오크 벤치 3번 사진"></figure>
+                            <figure><img src="./img/newp1.jpg" alt="세렌 오크 벤치 4번 사진"></figure>
+                            <figure><img src="./img/newp1.jpg" alt="세렌 오크 벤치 5번 사진"></figure>
+                        </div>
+                    </div>
                 </div>
-                <ul class="new-product grid-list">
-                    <li>
-                        <a href="#">
-                            
-                        </a>
-                    </li>
-                </ul>
+                <div class="product-txt">
+                    <div class="product-name">
+                        <span class="category-badge">NEW</span>
+                        <div class="product-title">세렌 오크 벤치</div>
+                    </div>
+                    <div class="pay-frame">
+                        <div class="pay-original">
+                            <span>100,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                    <dl class="benefit">
+                        <dt>회원혜택</dt>
+                        <dd>
+                            <ul class="benefit-list">
+                                <li>
+                                    <span>상품할인</span>
+                                    <div class="price-benefit">
+                                        <span><b>578,000</b>원 <i>5%</i></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>장바구니 할인</span>
+                                    <div class="price-benefit">
+                                        <span><b>531,700</b>원 <i>8%</i></span>
+                                        <p class="tip-benefit">주문서 작성 시 가격 적용됩니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-coupon">전체 쿠폰 받기<img src="./img/download-icon.svg" alt="전체 쿠폰 받기"></a>
+                        </dd>
+                        <dt>추가혜택</dt>
+                        <dd>
+                            <ul class="benefit-list">
+                                <li>
+                                    <span>무이자할부</span>
+                                    <div class="desc-benefit">
+                                        할부금 월 96,333원 (최대 6개월)
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>카드</span>
+                                    <div class="desc-benefit">
+                                        하나카드 568,000원 (10,000원 즉시할인)
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-link">더보기</a>
+                        </dd>
+                        <dt>포인트</dt>
+                        <dd>
+                            <ul class="benefit-list">
+                                <li>
+                                    <span>M.Point</span>
+                                    <div class="desc-benefit">
+                                        578P (0.1%) 적립 예정
+                                        <p class="tip-benefit">회원가입 시 적립 가능합니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-link">더보기</a>
+                        </dd>
+                        <dt>배송정보</dt>
+                        <dd>
+                            <p class="delivery-info">무료배송 (제주도 제외)</p>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-link">자세히 보기</a>
+                        </dd>
+                    </dl>
+                    <div class="pay-info">
+                        총 합계금액 <b>578,000</b>원
+                        <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn-cart">장바구니</a>
+                        <a href="#" class="btn-buy">구매하기</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
