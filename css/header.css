@@ -101,6 +101,9 @@ header{
         z-index: 100;
         width: 100%;
         background-color: #fff;
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--maroon2);
+        overflow: hidden;
         
         &>.common-frame{
             display: flex;
