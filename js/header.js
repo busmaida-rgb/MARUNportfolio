@@ -1,29 +1,40 @@
-const btnMenu = document.querySelector('.btn-menu');
-const smartOverlayMenu = document.querySelector('.smart-overlay-menu');
-const btnMenuClose = document.querySelector('.btn-menu-close');
+document.addEventListener('click', (e) => {
+    const menuBtn = e.target.closest('.btn-menu');
+    const menuCloseBtn = e.target.closest('.btn-menu-close');
+    const smartMenuItem = e.target.closest('.gnb-smart > li');
 
-//스마트 디바이스 메뉴 열기닫기
-if(btnMenu){
-    btnMenu.addEventListener('click',()=>{
-        smartOverlayMenu.classList.add('on');
-    });
-};
-if(btnMenuClose){
-    btnMenuClose.addEventListener('click',()=>{
-        smartOverlayMenu.classList.remove('on');
-    });
-};
-
-const smartLi = document.querySelectorAll('.gnb-smart>li');
-const gnb2depthSmarts = document.querySelectorAll('.gnb2depth-smart');
-
-smartLi.forEach((li,idx)=>{
-    li.addEventListener('click',(e)=>{
-        if(idx===0){return};
+    if (menuBtn) {
         e.preventDefault();
-        smartLi.forEach(litag=>litag.classList.remove('on'));
-        li.classList.add('on');
-        gnb2depthSmarts.forEach(div=>div.classList.remove('on'));
-        gnb2depthSmarts[idx-1].classList.add('on');
-    });
+        const smartOverlayMenu = document.querySelector('.smart-overlay-menu');
+        if (smartOverlayMenu) {
+            smartOverlayMenu.classList.add('on');
+        }
+        return;
+    }
+
+    if (menuCloseBtn) {
+        e.preventDefault();
+        const smartOverlayMenu = document.querySelector('.smart-overlay-menu');
+        if (smartOverlayMenu) {
+            smartOverlayMenu.classList.remove('on');
+        }
+        return;
+    }
+
+    if (smartMenuItem) {
+        const smartLi = [...document.querySelectorAll('.gnb-smart > li')];
+        const gnb2depthSmarts = document.querySelectorAll('.gnb2depth-smart');
+        const idx = smartLi.indexOf(smartMenuItem);
+
+        if (idx === 0) return;
+
+        e.preventDefault();
+        smartLi.forEach((li) => li.classList.remove('on'));
+        smartMenuItem.classList.add('on');
+        gnb2depthSmarts.forEach((div) => div.classList.remove('on'));
+
+        if (gnb2depthSmarts[idx - 1]) {
+            gnb2depthSmarts[idx - 1].classList.add('on');
+        }
+    }
 });
