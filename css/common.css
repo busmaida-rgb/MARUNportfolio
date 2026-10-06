@@ -89,6 +89,7 @@ html {
     font-weight: var(--fw1);
     font-family: 'Pretendard', sans-serif;
     color: var(--gray9);
+    scroll-behavior: smooth;
 }
 
 main {
